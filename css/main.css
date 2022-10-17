@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'Eagle';
+	font-weight: bold;
+	src: url(../fonts/Eagle-Bold.otf) format('opentype');
+}
+
+a{
+	font-family: 'Eagle', sans-serif;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: black;
+}
+
+h1{
+	font-family: 'Eagle', sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	color: #4E00A8;
+}
+
+h2{
+	font-family: 'Eagle', sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+h3{
+	font-family: 'Eagle', sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	color: black;
+	background-color: white;
+	padding: .5rem .5rem .5rem .5rem;
+	text-align: center;
+}
+
+p{
+	font-size: 1rem;
+	color: black;
+	font-family: aktiv-grotesk,sans-serif;
+}
+
+
+header{
+	background-color: #EFFFEA;
+	padding: 2rem;
+	color: black;
+}
+
+@media screen and (max-width: 39.9375em){
+  header .menu {
+    /* position menu on top, full screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    /* menu slide in details */
+    transform: translateY(100%);
+    transition: transform .4s;
+    /* position content in vertical center */
+    flex-direction: column;
+    justify-content: center;
+    /* styling details */
+    padding: 2rem;
+    background-color: #5DB500;
+  }
+  header .menu.slide-in {
+    transform: translateY(0);
+  }
+  header .menu li {
+    /* override Foundation class and align content on left */
+    justify-content: flex-start !important;
+    /* add styling details */
+    font-size: 2rem;
+  }
+  header .menu li a {
+    /* add styling details */
+    color: #ffffff;
+  }
+  header button {
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  header button.show-for-small-only {
+    position: relative;
+    z-index: 2;
+  }
+  header button.show-for-small-only.btnToggle {
+    color: #ffffff;
+  }
+}
+
+.centered-container{
+	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	text-align: center;
+}
+
+.centered-container img{
+	max-height: 100%;
+  max-width: 100%;
+}
+
+.hero{
+	padding: 2rem;
+}
+
+.hero img{
+	padding: 1rem;
+}
+
+.functions {
+	background-color: #942AFF;
+	color: white;
+	padding: 1rem;
+	text-align: center;
+}
+
+.functions img{
+	padding-bottom: 1rem;
+}
+
+.info {
+	background-color: #5DB500;
+	color: white;
+	padding: 1rem;
+}
+
+.info p{
+	color: white;
+}
+
+.info ul{
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.info li{
+	display: inline-block;
+}
+
+.info a .fa-solid, .fa-brands{
+	font-size: 2rem;
+	padding: .5rem;
+	color: white;
+}
+
+footer{
+	background-color: #EFFFEA;
+	padding: 1rem;
+	text-align: center;
+}
